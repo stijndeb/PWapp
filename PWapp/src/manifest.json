@@ -1,8 +1,13 @@
 {
-    "name": "Progressive Web app",
-    "short_name": "PWapp",
-    "description": "A cool dog image generator",  
-    "icons": [{
+  "name": "PWapp",
+  "short_name": "PWapp",
+  "theme_color": "#673ab7",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "index.html",
+  "icons": [
+    {
       "src": "assets/icon-128x128.png",
         "sizes": "128x128",
         "type": "image/png"
@@ -18,9 +23,6 @@
         "src": "assets/icon-512x512.png",
         "sizes": "512x512",
         "type": "image/png"
-      }],
-    "start_url": "index.html",
-    "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#673ab7"
-  }
+      }
+  ]
+}

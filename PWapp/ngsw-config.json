@@ -1,17 +1,15 @@
 {
-    "index": "/index.html",
-    "assetGroups": [{
+  "index": "/index.html",
+  "assetGroups": [
+    {
       "name": "app",
       "installMode": "prefetch",
       "resources": {
         "files": [
           "/favicon.ico",
-          "/index.html"
-        ],
-        "versionedFiles": [
-          "/*.bundle.css",
-          "/*.bundle.js",
-          "/*.chunk.js"
+          "/index.html",
+          "/*.css",
+          "/*.js"
         ]
       }
     }, {
@@ -23,5 +21,6 @@
           "/assets/**"
         ]
       }
-    }]
-  }
+    }
+  ]
+}
