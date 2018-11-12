@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { ImgCardComponent } from './img-card/img-card.component';
 import { HttpClientModule }    from '@angular/common/http';
 
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +20,8 @@ import { HttpClientModule }    from '@angular/common/http';
     MatToolbarModule,
     MatCardModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    environment.production ? ServiceWorkerModule.register('ngsw-worker.js') : []
   ],
   providers: [],
   bootstrap: [AppComponent]
