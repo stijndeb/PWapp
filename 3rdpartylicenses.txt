@@ -492,10 +492,6 @@ THE SOFTWARE.
 
 @angular/material/toolbar
 
-@angular/material/card
-
-@angular/material/button
-
 @angular/service-worker
 MIT
 
