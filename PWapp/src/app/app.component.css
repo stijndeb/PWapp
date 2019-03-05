@@ -3,3 +3,9 @@
     max-width: 1000px !important;
     margin: 15px;
 }
+
+mat-toolbar{
+    background-color: cadetblue;
+    color: white;
+    
+}

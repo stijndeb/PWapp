@@ -97,44 +97,44 @@ export class DemoComponentComponent {
     },{
       start: new Date('November 15, 2018 18:00:00'),
       end: new Date('November 15, 2018 20:00:00'),
-      title: 'AI-B-niveau',
+      title: 'AI-B-niveau: 18-20',
       color: colors.green,
       actions: this.actions
     },{
       start: new Date('November 16, 2018 17:00:00'),
       end: new Date('November 16, 2018 19:00:00'),
-      title: 'C-niveau',
+      title: 'C-niveau: 17-19',
       color: colors.blue,
       actions: this.actions
     },
     {
       start: new Date('November 17, 2018 12:00:00'),
       end: new Date('November 17, 2018 14:00:00'),
-      title: 'AI-niveau',
+      title: 'AI-niveau: 12-14',
       color: colors.yellow,
       actions: this.actions
     },{
       start: new Date('November 17, 2018 14:00:00'),
       end: new Date('November 17, 2018 16:00:00'),
-      title: 'C-niveau',
+      title: 'C-niveau: 14-16',
       color: colors.blue,
       actions: this.actions
     },{
       start: new Date('November 17, 2018 15:00:00'),
       end: new Date('November 17, 2018 17:00:00'),
-      title: 'B-niveau',
+      title: 'B-niveau: 15-17',
       color: colors.red,
       actions: this.actions
     },{
       start: new Date('November 18, 2018 9:00:00'),
       end: new Date('November 18, 2018 11:00:00'),
-      title: 'C-niveau',
+      title: 'C-niveau: 9-11',
       color: colors.blue,
       actions: this.actions
     },{
       start: new Date('November 18, 2018 13:00:00'),
       end: new Date('November 18, 2018 15:00:00'),
-      title: 'AI-niveau',
+      title: 'AI-niveau: 13-15',
       color: colors.yellow,
       actions: this.actions
     }

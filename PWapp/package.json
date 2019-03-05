@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --prod --base-href 'https://stijndeb.github.io/PWapp/'",
+    "githubPage": "npx ngh --dir=dist/PWapp",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

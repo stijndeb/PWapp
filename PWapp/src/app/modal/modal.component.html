@@ -1,19 +1,39 @@
   <div class="modal-header">
-    <h5 class="modal-title">Event action occurred</h5>
-    <button type="button" class="close" (click)="close()">
+    <h5 class="modal-title">{{ modalData.event.title }} {{  getDay(modalData.event) }}</h5>
+    <button type="button" class="close">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
   <div class="modal-body">
-    <div>
-      Action:
-      <pre>{{ modalData?.action }}</pre>
+<div class="row">
+  <div class="margin">
+      <strong>Trianers:</strong>
+      <div *ngFor="let trainer of getTrainers()">
+        {{ trainer}}
+      </div>
+  </div>
+    <div class="margin">
+      <strong>Gymnasten:</strong>
+      <div *ngFor="let gymnast of getGymnasten()">
+          <input type="checkbox" [checked]="gymnast.aanwezig"> 
+        {{ gymnast.naam }}
+        <span *ngIf="!gymnast.aanwezig">: &nbsp; {{gymnast.reden}}</span>
+        
+      </div>
+    </div>
+</div>
+
+    
+    <!-- <div>
+      start:
+      <pre>{{ modalData.event.start }}</pre>
+      end: {{ modalData.event.end }}
     </div>
     <div>
       Event:
       <pre>{{ modalData?.event | json }}</pre>
-    </div>
+    </div> -->
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-outline-secondary" (click)="close()">OK</button>
+    <button type="button" class="btn btn-outline-secondary">OK</button>
   </div>
